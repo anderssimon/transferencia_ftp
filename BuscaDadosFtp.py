@@ -44,4 +44,4 @@ with paramiko.Transport((host, port)) as transport:
 
 print("Download e exclusão concluídos.")
 
-# pyinstaller --onefile monitor_data.py
+# pyinstaller --onefile BuscaDadosFtp.py
