@@ -10,7 +10,7 @@ senha = 'KQW8Az2I'
 pasta_remota = 'dev/system/nfse'
 
 # Pasta local para salvar os arquivos
-pasta_local = 'c:\\temp'
+pasta_local = 'C:\\Portal de Boletos B3\\FTP NFSe Protheus'
 
 # Conectar ao servidor SFTP
 with paramiko.Transport((host, port)) as transport:
