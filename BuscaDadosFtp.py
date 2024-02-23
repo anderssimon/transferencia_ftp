@@ -37,7 +37,7 @@ with paramiko.Transport((host, port)) as transport:
 
             # Baixar o arquivo
             sftp.get(arquivo_remoto, caminho_local)
-            print(f"Download do arquivo {arquivo_remoto} realizado com sucesso!")
+            print(f"Download do arquivo {arquivo_remoto} realizado com sucesso!") # noqa E501
 
             # Excluir o arquivo remoto após o download
             sftp.remove(arquivo_remoto)
