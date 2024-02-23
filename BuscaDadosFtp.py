@@ -1,28 +1,30 @@
 import os
-from ftplib import FTP
 
-# Configurações do servidor FTP
-host = 'ftp.b3gestaoetecnolo1.hospedagemdesites.ws'
-usuario = 'b3gestaoetecnolo1'
-senha = 'B3gestao_Senh@'
-pasta_remota = 'teste'
+import paramiko
+
+# Configurações do servidor SFTP
+host = 'rodoparanaimplementos120531.protheus.cloudtotvs.com.br'
+port = 2323
+usuario = 'ftp_CRC3TS_production'
+senha = 'KQW8Az2I'
+pasta_remota = 'dev/system/nfse'
 
 # Pasta local para salvar os arquivos
 pasta_local = 'c:\\temp'
 
-# Conectar ao servidor FTP
-with FTP(host) as ftp:
-    # Fazer login
-    ftp.login(usuario, senha)
+# Conectar ao servidor SFTP
+with paramiko.Transport((host, port)) as transport:
+    transport.connect(username=usuario, password=senha)
+    sftp = paramiko.SFTPClient.from_transport(transport)
 
     # Mudar para a pasta remota
     try:
-        ftp.cwd(pasta_remota)
-    except Exception:
+        sftp.chdir(pasta_remota)
+    except IOError:
         print("Diretório destino não encontrado")
 
     # Listar os arquivos na pasta remota
-    arquivos_remotos = ftp.nlst()
+    arquivos_remotos = sftp.listdir()
 
     # Criar a pasta local se não existir
     if not os.path.exists(pasta_local):
@@ -33,14 +35,11 @@ with FTP(host) as ftp:
         if arquivo_remoto.lower().endswith('.pdf'):
             caminho_local = os.path.join(pasta_local, arquivo_remoto)
 
-            # Baixa o Arquivo
-            with open(caminho_local, 'wb') as arquivo_local:
-                ftp.retrbinary(f"RETR {arquivo_remoto}", arquivo_local.write)
-                print(f"Download do arquivo {arquivo_remoto} realizado com sucesso!") # noqa eE501
-          
-            # Excluir o arquivo remoto após o download
-            ftp.delete(arquivo_remoto)
-        else:
-            print("Não existem arquivos para download")
+            # Baixar o arquivo
+            sftp.get(arquivo_remoto, caminho_local)
+            print(f"Download do arquivo {arquivo_remoto} realizado com sucesso!")
 
-# pyinstaller --onefile BuscaDadosFtp.py
+            # Excluir o arquivo remoto após o download
+            sftp.remove(arquivo_remoto)
+
+print("Download e exclusão concluídos.")
