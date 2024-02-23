@@ -43,3 +43,5 @@ with paramiko.Transport((host, port)) as transport:
             sftp.remove(arquivo_remoto)
 
 print("Download e exclusão concluídos.")
+
+# pyinstaller --onefile monitor_data.py
