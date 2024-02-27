@@ -122,37 +122,37 @@
   ('base_library.zip',
    'C:\\Python\\Transferencia FTP\\build\\BuscaDadosFtp\\base_library.zip',
    'DATA'),
-  ('cryptography-42.0.4.dist-info\\METADATA',
+  ('cryptography-42.0.4.dist-info\\LICENSE.BSD',
    'C:\\Python\\Transferencia '
-   'FTP\\venv\\Lib\\site-packages\\cryptography-42.0.4.dist-info\\METADATA',
-   'DATA'),
-  ('cryptography-42.0.4.dist-info\\top_level.txt',
-   'C:\\Python\\Transferencia '
-   'FTP\\venv\\Lib\\site-packages\\cryptography-42.0.4.dist-info\\top_level.txt',
-   'DATA'),
-  ('cryptography-42.0.4.dist-info\\LICENSE',
-   'C:\\Python\\Transferencia '
-   'FTP\\venv\\Lib\\site-packages\\cryptography-42.0.4.dist-info\\LICENSE',
-   'DATA'),
-  ('cryptography-42.0.4.dist-info\\INSTALLER',
-   'C:\\Python\\Transferencia '
-   'FTP\\venv\\Lib\\site-packages\\cryptography-42.0.4.dist-info\\INSTALLER',
-   'DATA'),
-  ('cryptography-42.0.4.dist-info\\RECORD',
-   'C:\\Python\\Transferencia '
-   'FTP\\venv\\Lib\\site-packages\\cryptography-42.0.4.dist-info\\RECORD',
+   'FTP\\venv\\Lib\\site-packages\\cryptography-42.0.4.dist-info\\LICENSE.BSD',
    'DATA'),
   ('cryptography-42.0.4.dist-info\\LICENSE.APACHE',
    'C:\\Python\\Transferencia '
    'FTP\\venv\\Lib\\site-packages\\cryptography-42.0.4.dist-info\\LICENSE.APACHE',
    'DATA'),
+  ('cryptography-42.0.4.dist-info\\RECORD',
+   'C:\\Python\\Transferencia '
+   'FTP\\venv\\Lib\\site-packages\\cryptography-42.0.4.dist-info\\RECORD',
+   'DATA'),
+  ('cryptography-42.0.4.dist-info\\LICENSE',
+   'C:\\Python\\Transferencia '
+   'FTP\\venv\\Lib\\site-packages\\cryptography-42.0.4.dist-info\\LICENSE',
+   'DATA'),
   ('cryptography-42.0.4.dist-info\\WHEEL',
    'C:\\Python\\Transferencia '
    'FTP\\venv\\Lib\\site-packages\\cryptography-42.0.4.dist-info\\WHEEL',
    'DATA'),
-  ('cryptography-42.0.4.dist-info\\LICENSE.BSD',
+  ('cryptography-42.0.4.dist-info\\top_level.txt',
    'C:\\Python\\Transferencia '
-   'FTP\\venv\\Lib\\site-packages\\cryptography-42.0.4.dist-info\\LICENSE.BSD',
+   'FTP\\venv\\Lib\\site-packages\\cryptography-42.0.4.dist-info\\top_level.txt',
+   'DATA'),
+  ('cryptography-42.0.4.dist-info\\INSTALLER',
+   'C:\\Python\\Transferencia '
+   'FTP\\venv\\Lib\\site-packages\\cryptography-42.0.4.dist-info\\INSTALLER',
+   'DATA'),
+  ('cryptography-42.0.4.dist-info\\METADATA',
+   'C:\\Python\\Transferencia '
+   'FTP\\venv\\Lib\\site-packages\\cryptography-42.0.4.dist-info\\METADATA',
    'DATA'),
   ('nacl\\py.typed',
    'C:\\Python\\Transferencia FTP\\venv\\Lib\\site-packages\\nacl\\py.typed',
@@ -160,7 +160,7 @@
  [],
  False,
  False,
- 1708695795,
+ 1709039854,
  [('run.exe',
    'C:\\Python\\Transferencia '
    'FTP\\venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',

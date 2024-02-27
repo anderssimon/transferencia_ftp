@@ -7,7 +7,7 @@ host = 'rodoparanaimplementos120531.protheus.cloudtotvs.com.br'
 port = 2323
 usuario = 'ftp_CRC3TS_production'
 senha = 'KQW8Az2I'
-pasta_remota = 'dev/system/nfse'
+pasta_remota = 'dev/nfse'
 
 # Pasta local para salvar os arquivos
 pasta_local = 'C:\\Portal de Boletos B3\\FTP NFSe Protheus'
